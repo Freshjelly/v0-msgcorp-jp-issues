@@ -1,0 +1,63 @@
+{
+  "basic": {
+    "companyName": "MSG株式会社",
+    "companyNameEn": "MSG Corporation",
+    "tagline": "True health belongs to everyone.",
+    "taglineJa": "健康はすべての人の幸せのためにある",
+    "founded": "2016年6月22日",
+    "capital": "95,000,000円",
+    "employees": "60名（医師・薬剤師含む）",
+    "ceo": "飯 寿行",
+    "address": {
+      "postal": "150-0002",
+      "prefecture": "東京都",
+      "city": "渋谷区渋谷3-6-2",
+      "building": "YAGI bldg.2 3F"
+    },
+    "contact": {
+      "email": "info@msgcorp.jp",
+      "phone": "03-1234-5678",
+      "businessHours": "平日 9:00 - 18:00（土日祝日を除く）"
+    }
+  },
+  "philosophy": {
+    "management": {
+      "title": "経営理念",
+      "titleEn": "Philosophy",
+      "content": "心身ともに健やかで、幸せと喜びを感じられる世界を実現する。",
+      "description": "MSGは、「生きること」そのものを豊かにするために、真の健やかさを追求し続けます。"
+    },
+    "mission": {
+      "title": "ミッション",
+      "titleEn": "Mission",
+      "content": "健康な生活を通じて、生涯幸福度の向上に寄与する",
+      "description": "東西医療の叡智とテクノロジーの力で、人が自分らしく生きる力を取り戻す"
+    },
+    "vision": {
+      "title": "ビジョン",
+      "titleEn": "Vision",
+      "content": "すべての人が安心・安全・満足できるヘルスケアの創造",
+      "description": "すべての人が、安全かつ満足できるヘルスケアにアクセスできる世界を創造する"
+    },
+    "values": {
+      "title": "バリュー",
+      "titleEn": "Core Values",
+      "content": "医学・薬学・科学による、効果的・効率的なヘルスケアの提供",
+      "description": "人に寄り添うテクノロジーと、伝統に根ざす知恵の融合",
+      "formula": "未来型ヘルスケア = Eastern Wisdom + Western Science + Digital Intelligence"
+    }
+  },
+  "partners": [
+    "一般社団法人国際統合治療協会",
+    "未病体質研究会",
+    "一般社団法人食と健康推進協会",
+    "一般社団法人日本サプリメント協会"
+  ],
+  "businessPolicies": [
+    "お客さま一人ひとりの健康のために、質の高いサービスを提供します。",
+    "お客さまにより良いサービスを提供するため、常に「学び」「研究」「実践」などあらゆる努力をいたします。",
+    "社員一人ひとりが健康で幸せを感じ、成長と活躍ができる環境をつくります。",
+    "コーポレート・ガバナンスの確立による健全な経営を行います。",
+    "常に新しい価値の創造により、継続的な成長を生み出します。"
+  ]
+}

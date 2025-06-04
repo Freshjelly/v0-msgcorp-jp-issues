@@ -1,0 +1,88 @@
+{
+  "services": [
+    {
+      "id": "kampoai",
+      "name": "KampoAI",
+      "tagline": "Reimagining Tradition through Intelligence.",
+      "taglineJa": "伝統を、AIで再定義する。",
+      "description": "長い歴史が育んだ膨大な知識とデータを学習し、人知の及ばない精度の高い見極めをAIがどこまで可能にするのか。中国の名医の診立てに匹敵する「体質九分類」を採用した革新的なシステムです。",
+      "features": [
+        {
+          "title": "中医体質九分類",
+          "description": "王琦北京中医薬大学終身教授が確立し、中国政府で公式に認められた体質判定システム"
+        },
+        {
+          "title": "AI診断システム",
+          "description": "個別養生アドバイス、生薬データベース、ビッグデータを活用した高精度診断"
+        },
+        {
+          "title": "科学と伝統の統合",
+          "description": "科学と伝統の統合による新たな健康体験"
+        }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "royal-kampo",
+      "name": "ロイヤル漢方クラブ",
+      "tagline": "Where Expertise Meets Heritage.",
+      "taglineJa": "専門性が、漢方の真価をつなぐ場所。",
+      "description": "国内屈指の漢方のプロフェッショナルが集結。医師、薬学博士、薬剤師、漢方治療アドバイザー、体質管理士、東洋医療検査師、鍼灸師、AI開発者が新旧の知恵と知識を集積し、新たな解を提供します。",
+      "features": [
+        {
+          "title": "専門家ネットワーク",
+          "description": "医師・薬剤師・研究者による監修・執筆・講演サポート"
+        },
+        {
+          "title": "マッチングシステム",
+          "description": "医師・薬剤師・研究者の新しい漢方マッチング"
+        },
+        {
+          "title": "漢方実践支援",
+          "description": "正しい漢方実践のための仕組みづくり"
+        }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "smart-foods",
+      "name": "Smart Functional Foods Project",
+      "tagline": "From Idea to Impact: The functionality of food creates happiness.",
+      "taglineJa": "アイデアから、社会的インパクトへ。食品の機能が幸福を創り出す。",
+      "description": "MSGが運営する Smart Functional Food Project（Sフードプロジェクト）は、健康実現のために「売れる＋売れ続ける」商品をプロデュースする全方位型支援プラットフォームです。",
+      "phases": [
+        {
+          "number": "01",
+          "title": "商品開発 × ブランディング",
+          "titleEn": "Design to Win. Build to Last.",
+          "points": [
+            "原料の厳選 × 訴求キーワード × パッケージ戦略",
+            "有識者・タレント・ドクター監修で信頼性の高い設計",
+            "「一目で伝わる・一口で納得する」商品開発"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "メディア連携 × PR",
+          "titleEn": "Be Seen. Be Trusted. Be Desired.",
+          "points": [
+            "新聞社、出版社、美容メディアとの連携",
+            "Yahoo!・TRILL・シンデレラフィットでの継続露出",
+            "インフルエンサーによるSNS拡散"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "販促 × 継続購入支援",
+          "titleEn": "Catch the Eye. Keep the Heart.",
+          "points": [
+            "専門POP職人による店頭販促物",
+            "店頭＆ECサイトでの目に留まるディスプレイ演出",
+            "季節・特集に応じた小冊子／定期購入ツール"
+          ]
+        }
+      ],
+      "color": "purple"
+    }
+  ]
+}

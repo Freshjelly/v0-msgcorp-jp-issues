@@ -1,64 +1,21 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, ArrowRight } from "lucide-react"
+import newsData from "@/data/news.json"
+import type { Metadata } from 'next'
+
+// ✏️ このページのメタデータを変更する場合はここを編集してください
+export const metadata: Metadata = {
+  title: 'ニュース',
+  description: 'MSG株式会社の最新ニュース、プレスリリース、研究成果をお届けします。',
+}
 
 export default function NewsPage() {
-  const newsItems = [
-    {
-      category: "プレスリリース",
-      title: "新サービス「KampoAI 2.0」リリースのお知らせ",
-      date: "2024.01.15",
-      excerpt:
-        "AI技術を活用した漢方診断システムの新バージョンをリリースしました。より高精度な体質判定と個別化された養生アドバイスを提供します。",
-      featured: true,
-    },
-    {
-      category: "研究成果",
-      title: "国際学会での研究発表について",
-      date: "2024.01.10",
-      excerpt:
-        "第15回国際統合医療学会にて、当社の研究成果を発表いたします。東西医療融合の新たな可能性について報告予定です。",
-      featured: false,
-    },
-    {
-      category: "メディア掲載",
-      title: "日経新聞に掲載されました",
-      date: "2024.01.05",
-      excerpt:
-        "当社の取り組みが日本経済新聞の健康特集で紹介されました。AIと伝統医学の融合による新しいヘルスケアの形について取り上げられています。",
-      featured: false,
-    },
-    {
-      category: "プレスリリース",
-      title: "Smart Functional Foods Project 新パートナー企業との提携発表",
-      date: "2023.12.20",
-      excerpt:
-        "機能性食品の開発・販売において、新たなパートナー企業との業務提携を開始いたします。より多くの方に健康的な食品をお届けします。",
-      featured: false,
-    },
-    {
-      category: "お知らせ",
-      title: "年末年始休業のお知らせ",
-      date: "2023.12.15",
-      excerpt:
-        "誠に勝手ながら、下記の期間を年末年始休業とさせていただきます。期間中にいただいたお問い合わせは、営業開始日以降に順次対応いたします。",
-      featured: false,
-    },
-    {
-      category: "研究成果",
-      title: "漢方薬の効果に関する臨床研究結果を発表",
-      date: "2023.12.01",
-      excerpt:
-        "当社が実施した漢方薬の効果に関する臨床研究の結果を学術誌に発表いたします。科学的エビデンスに基づく漢方医学の発展に貢献します。",
-      featured: false,
-    },
-  ]
+  // ✏️ ニュースを追加・編集する場合は /data/news.json ファイルを編集してください
+  const newsItems = newsData.news
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      <Header />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
@@ -155,7 +112,6 @@ export default function NewsPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

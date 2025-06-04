@@ -25,6 +25,9 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+              About
+            </Link>
             <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
               サービス
             </Link>
@@ -57,6 +60,13 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden border-t bg-white py-4">
             <nav className="flex flex-col space-y-4">
+              <Link
+                href="/about"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
               <Link
                 href="/services"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
