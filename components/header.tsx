@@ -27,7 +27,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center">
+          <nav className="hidden sm:flex items-center">
             <StaggerContainer className="flex items-center space-x-8">
               <StaggerItem>
                 <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
@@ -82,7 +82,7 @@ export function Header() {
           {/* Mobile menu button */}
           <AnimatedButton
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+            className="sm:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -99,7 +99,7 @@ export function Header() {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="lg:hidden border-t bg-white py-4 overflow-hidden"
+              className="sm:hidden border-t bg-white py-4 overflow-hidden"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
