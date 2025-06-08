@@ -298,15 +298,43 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/services">
-                  <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg">
-                    サービス詳細を見る
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg">
+                    <span>サービス詳細を見る</span>
+                    <ArrowRight className="h-5 w-5" />
                   </AnimatedButton>
                 </Link>
                 <Link href="/partnership">
-                  <AnimatedButton className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-lg">
-                    パートナーシップについて
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-lg">
+                    <span>パートナーシップについて</span>
+                    <ArrowRight className="h-5 w-5" />
+                  </AnimatedButton>
+                </Link>
+              </div>
+            </div>
+          </FadeInWhenVisible>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-green-600">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <FadeInWhenVisible>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <h2 className="text-3xl lg:text-5xl font-bold text-white">Join Us. Redefine the Future of Health.</h2>
+              <p className="text-xl text-blue-100">
+                共に「健康」を変える仲間を募集しています
+                <br />
+                医療、食品、AIのプロフェッショナルを募集
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/careers">
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg rounded-lg shadow-lg">
+                    <span>採用情報を見る</span>
+                  </AnimatedButton>
+                </Link>
+                <Link href="/contact">
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg rounded-lg">
+                    <span>Partner with Us | お問い合わせ</span>
                   </AnimatedButton>
                 </Link>
               </div>

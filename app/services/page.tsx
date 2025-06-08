@@ -168,9 +168,9 @@ export default function ServicesPage() {
                           </div>
                         )}
                         
-                        <AnimatedButton className={`${styles.buttonBg} text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl transform hover:scale-105`}>
-                          詳細を見る
-                          <ArrowRight className="ml-2 h-4 w-4" />
+                        <AnimatedButton className={`inline-flex items-center gap-2 whitespace-nowrap ${styles.buttonBg} text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl transform hover:scale-105`}>
+                          <span>詳細を見る</span>
+                          <ArrowRight className="h-4 w-4" />
                         </AnimatedButton>
                       </div>
                       
@@ -204,15 +204,15 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
-                    お問い合わせ
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
+                    <span>お問い合わせ</span>
+                    <ArrowRight className="h-5 w-5" />
                   </AnimatedButton>
                 </Link>
                 <Link href="/partnership">
-                  <AnimatedButton className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:border-blue-700">
-                    パートナーシップについて
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <AnimatedButton className="inline-flex items-center gap-2 whitespace-nowrap border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:border-blue-700">
+                    <span>パートナーシップについて</span>
+                    <ArrowRight className="h-5 w-5" />
                   </AnimatedButton>
                 </Link>
               </div>
