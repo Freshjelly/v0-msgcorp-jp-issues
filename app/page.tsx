@@ -112,7 +112,7 @@ export default function HomePage() {
                 <div className="text-sm text-gray-600">設立</div>
               </StaggerItem>
               <StaggerItem className="text-center">
-                <div className="text-3xl font-bold text-green-600">{company.employees}</div>
+                <div className="text-3xl font-bold text-green-600 whitespace-nowrap">{company.employees}</div>
                 <div className="text-sm text-gray-600">従業員数</div>
               </StaggerItem>
               <StaggerItem className="text-center">
