@@ -84,7 +84,7 @@ export default function CompanyPage() {
                       <Users className="h-5 w-5 text-gray-600" />
                       <span className="font-medium text-gray-700">従業員数</span>
                     </div>
-                    <span className="text-gray-900">60名（医師・薬剤師含む）</span>
+                    <span className="text-gray-900 whitespace-nowrap">60名（医師・薬剤師含む）</span>
                   </div>
 
                   <div className="p-4 bg-gray-50 rounded-lg">

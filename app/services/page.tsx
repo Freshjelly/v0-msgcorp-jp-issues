@@ -1,53 +1,57 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Leaf, Stethoscope, ArrowRight, Users, Database, Zap } from "lucide-react"
-import type { Metadata } from 'next'
+import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible"
+import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer"
+import { AnimatedButton } from "@/components/animations/AnimatedButton"
+import { AnimatedCard } from "@/components/animations/AnimatedCard"
 
-export const metadata: Metadata = {
-  title: 'サービス',
-  description: 'MSG株式会社の革新的なヘルスケアサービス - KampoAI、ロイヤル漢方クラブ、Smart Functional Foods Project',
-}
 
 export default function ServicesPage() {
   return (
     <div className="bg-white font-sans">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-green-50 py-12 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50">
-              Healthcare that evolves with you.
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900">
-              SERVICE
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
-                サービス紹介
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              あなたに最適化された、進化するヘルスケア。
-              <br />
-              東西医療の叡智とAIテクノロジーが融合した革新的なサービスをご提供します。
-            </p>
-          </div>
+          <FadeInWhenVisible>
+            <div className="text-center space-y-6 max-w-4xl mx-auto">
+              <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50 text-sm md:text-base">
+                Healthcare that evolves with you.
+              </Badge>
+              <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-gray-900">
+                SERVICE
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+                  サービス紹介
+                </span>
+              </h1>
+              <p className="text-base md:text-xl text-gray-600 leading-relaxed">
+                あなたに最適化された、進化するヘルスケア。
+                <br />
+                東西医療の叡智とAIテクノロジーが融合した革新的なサービスをご提供します。
+              </p>
+            </div>
+          </FadeInWhenVisible>
         </div>
       </section>
 
       {/* KampoAI Section */}
-      <section id="kampoai" className="py-20 bg-white">
+      <section id="kampoai" className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="border-0 shadow-xl bg-gradient-to-br from-blue-50 to-indigo-100">
-            <CardContent className="p-8 lg:p-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <h2 className="text-4xl font-bold text-gray-900">KampoAI</h2>
-                    <p className="text-xl text-blue-600 font-medium">
-                      Reimagining Tradition through Intelligence.
-                      <br />
-                      伝統を、AIで再定義する。
+          <FadeInWhenVisible>
+            <AnimatedCard className="border-0 shadow-xl bg-gradient-to-br from-blue-50 to-indigo-100">
+              <CardContent className="p-6 md:p-8 lg:p-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                  <div className="space-y-6 md:space-y-8">
+                    <div className="space-y-4">
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">KampoAI</h2>
+                      <p className="text-lg md:text-xl text-blue-600 font-medium">
+                        Reimagining Tradition through Intelligence.
+                        <br />
+                        伝統を、AIで再定義する。
                     </p>
                   </div>
 

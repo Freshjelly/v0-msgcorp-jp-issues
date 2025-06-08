@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
+import { motion, AnimatePresence } from "framer-motion"
+import { AnimatedButton } from "@/components/animations/AnimatedButton"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -50,25 +52,45 @@ export function Header() {
               CAREERS
             </Link>
             <Link href="/contact">
-              <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+              <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg">
                 お問い合わせ
-              </Button>
+              </AnimatedButton>
             </Link>
           </nav>
 
           {/* Mobile menu button */}
-          <button
+          <AnimatedButton
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+            <motion.div
+              animate={{ rotate: isMenuOpen ? 180 : 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </motion.div>
+          </AnimatedButton>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden border-t bg-white py-4">
-            <nav className="flex flex-col space-y-4">
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="lg:hidden border-t bg-white py-4 overflow-hidden"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <motion.nav
+                className="flex flex-col space-y-4"
+                initial={{ y: -20 }}
+                animate={{ y: 0 }}
+                exit={{ y: -20 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+              >
               <Link
                 href="/"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
@@ -127,14 +149,15 @@ export function Header() {
               </Link>
               <div className="px-4 py-2">
                 <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold">
+                  <AnimatedButton className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold">
                     お問い合わせ
-                  </Button>
+                  </AnimatedButton>
                 </Link>
               </div>
-            </nav>
-          </div>
-        )}
+              </motion.nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   )
