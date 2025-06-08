@@ -2,6 +2,12 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'プライバシーポリシー',
+  description: 'MSG株式会社のプライバシーポリシー。個人情報の取得、利用、管理について詳しく説明します。',
+}
 
 export default function PrivacyPage() {
   return (

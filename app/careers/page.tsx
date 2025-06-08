@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Head from "next/head"
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -112,8 +113,13 @@ export default function CareersPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <Header />
+    <>
+      <Head>
+        <title>採用情報 | MSG株式会社</title>
+        <meta name="description" content="MSG株式会社の採用情報。医療、食品、AIのプロフェッショナルを募集中。共に健康の未来を創造しませんか？" />
+      </Head>
+      <div className="min-h-screen bg-white font-sans">
+        <Header />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
@@ -447,7 +453,8 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   )
 }

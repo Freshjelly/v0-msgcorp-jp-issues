@@ -41,7 +41,13 @@ export default function HomePage() {
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), 
+                             radial-gradient(circle at 75% 75%, rgba(34, 197, 94, 0.1) 0%, transparent 50%)`,
+          }}></div>
+        </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center space-y-8 max-w-5xl mx-auto">
             <div className="space-y-4">
@@ -123,7 +129,7 @@ export default function HomePage() {
                   <Heart className="h-8 w-8 text-red-500" />
                   <div>
                     <CardTitle className="text-xl">{philosophy.management.title} | {philosophy.management.titleEn}</CardTitle>
-                    <CardDescription className="text-sm text-gray-500">
+                    <CardDescription className="text-sm text-gray-600">
                       Creating a society where mind and body thrive in harmony and happiness.
                     </CardDescription>
                   </div>
@@ -147,7 +153,7 @@ export default function HomePage() {
                   <Zap className="h-8 w-8 text-blue-500" />
                   <div>
                     <CardTitle className="text-xl">{philosophy.mission.title} | {philosophy.mission.titleEn}</CardTitle>
-                    <CardDescription className="text-sm text-gray-500">
+                    <CardDescription className="text-sm text-gray-600">
                       Enhancing lifelong happiness through healthy living.
                     </CardDescription>
                   </div>
@@ -171,7 +177,7 @@ export default function HomePage() {
                   <Globe className="h-8 w-8 text-green-500" />
                   <div>
                     <CardTitle className="text-xl">{philosophy.vision.title} | {philosophy.vision.titleEn}</CardTitle>
-                    <CardDescription className="text-sm text-gray-500">
+                    <CardDescription className="text-sm text-gray-600">
                       Creating accessible, safe, and satisfying healthcare for all.
                     </CardDescription>
                   </div>
@@ -195,7 +201,7 @@ export default function HomePage() {
                   <Brain className="h-8 w-8 text-purple-500" />
                   <div>
                     <CardTitle className="text-xl">{philosophy.values.title} | {philosophy.values.titleEn}</CardTitle>
-                    <CardDescription className="text-sm text-gray-500">
+                    <CardDescription className="text-sm text-gray-600">
                       Delivering effective and efficient healthcare.
                     </CardDescription>
                   </div>
@@ -226,7 +232,7 @@ export default function HomePage() {
                   <Building className="h-8 w-8 text-indigo-500" />
                   <div>
                     <CardTitle className="text-xl">{philosophy.businessPolicy.title} | Business Policy</CardTitle>
-                    <CardDescription className="text-sm text-gray-500">
+                    <CardDescription className="text-sm text-gray-600">
                       Creating an environment where all employees can work with challenge, execution, and pride.
                     </CardDescription>
                   </div>
@@ -273,6 +279,29 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          {/* CTA Section for Vision */}
+          <div className="text-center mt-12">
+            <div className="space-y-4">
+              <p className="text-lg text-gray-600">
+                私たちのビジョンに共感いただけましたか？
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/services">
+                  <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    サービス詳細を見る
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link href="/partnership">
+                  <Button size="lg" variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300">
+                    パートナーシップについて
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -360,6 +389,29 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* CTA Section for Services */}
+          <div className="text-center mt-16">
+            <div className="space-y-4">
+              <p className="text-lg text-gray-600">
+                私たちのサービスについてもっと詳しく知りたい方は
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/services">
+                  <Button size="lg" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    全サービスを詳しく見る
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button size="lg" variant="outline" className="border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300">
+                    サービス導入のご相談
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

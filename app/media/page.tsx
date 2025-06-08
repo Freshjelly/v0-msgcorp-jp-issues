@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Users, ArrowRight, FileText, Heart, Lightbulb } from "lucide-react"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'メディア展開',
+  description: 'MSG株式会社のメディア展開 - 健タメ！、MedStyle、Kampo Contents Service',
+}
 
 export default function MediaPage() {
   return (

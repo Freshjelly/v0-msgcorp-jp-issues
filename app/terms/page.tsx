@@ -2,6 +2,12 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '利用規約',
+  description: 'MSG株式会社のサービス利用規約。サービスの利用条件、禁止事項、免責事項について説明します。',
+}
 
 export default function TermsPage() {
   return (

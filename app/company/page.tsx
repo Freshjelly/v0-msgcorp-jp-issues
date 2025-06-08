@@ -3,6 +3,12 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Building, Users, MapPin, Calendar, DollarSign, Award } from "lucide-react"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '会社概要',
+  description: 'MSG株式会社の会社概要、企業理念、沿革、代表者情報をご紹介します。',
+}
 
 export default function CompanyPage() {
   return (

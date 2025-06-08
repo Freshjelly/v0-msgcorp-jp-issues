@@ -23,7 +23,13 @@ export default function PartnershipPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-green-200"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), 
+                             radial-gradient(circle at 75% 75%, rgba(34, 197, 94, 0.1) 0%, transparent 50%)`,
+          }}></div>
+        </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center space-y-6 max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">

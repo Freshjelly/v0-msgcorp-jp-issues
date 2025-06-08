@@ -19,7 +19,7 @@ export function Header() {
             </div>
             <div>
               <span className="text-xl font-bold text-gray-900">MSG株式会社</span>
-              <div className="text-xs text-gray-500">True health belongs to everyone.</div>
+              <div className="text-xs text-gray-600">True health belongs to everyone.</div>
             </div>
           </Link>
 
@@ -50,8 +50,8 @@ export function Header() {
               CAREERS
             </Link>
             <Link href="/contact">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                CONTACT
+              <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                お問い合わせ
               </Button>
             </Link>
           </nav>
@@ -125,13 +125,13 @@ export function Header() {
               >
                 CAREERS
               </Link>
-              <Link
-                href="/contact"
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                CONTACT
-              </Link>
+              <div className="px-4 py-2">
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold">
+                    お問い合わせ
+                  </Button>
+                </Link>
+              </div>
             </nav>
           </div>
         )}

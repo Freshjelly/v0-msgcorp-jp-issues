@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Leaf, Stethoscope, ArrowRight, Users, Database, Zap } from "lucide-react"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'サービス',
+  description: 'MSG株式会社の革新的なヘルスケアサービス - KampoAI、ロイヤル漢方クラブ、Smart Functional Foods Project',
+}
 
 export default function ServicesPage() {
   return (
