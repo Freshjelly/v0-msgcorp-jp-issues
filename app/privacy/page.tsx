@@ -1,5 +1,3 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import type { Metadata } from 'next'
@@ -11,8 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <Header />
+    <div className="bg-white font-sans">
 
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,7 +89,6 @@ export default function PrivacyPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

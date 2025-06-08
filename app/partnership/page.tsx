@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function PartnershipPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">

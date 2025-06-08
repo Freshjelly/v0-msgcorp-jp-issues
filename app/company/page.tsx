@@ -1,5 +1,3 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Building, Users, MapPin, Calendar, DollarSign, Award } from "lucide-react"
@@ -12,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function CompanyPage() {
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <Header />
+    <div className="bg-white font-sans">
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
@@ -252,7 +249,6 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

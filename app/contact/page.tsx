@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-import Head from "next/head"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -34,12 +33,7 @@ export default function ContactPage() {
   }
 
   return (
-    <>
-      <Head>
-        <title>お問い合わせ | MSG株式会社</title>
-        <meta name="description" content="MSG株式会社へのお問い合わせページ。サービス、パートナーシップ、採用についてお気軽にご相談ください。" />
-      </Head>
-      <div className="min-h-screen bg-white font-sans">
+    <div className="bg-white font-sans">
         {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -225,7 +219,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      </div>
-    </>
+    </div>
   )
 }

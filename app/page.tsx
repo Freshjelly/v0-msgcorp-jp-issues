@@ -38,7 +38,7 @@ export default function HomePage() {
   const latestNews = newsData.news.slice(0, 3)
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="bg-white font-sans">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
