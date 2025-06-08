@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -23,7 +23,6 @@ import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible"
 import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer"
 import { AnimatedButton } from "@/components/animations/AnimatedButton"
 import { AnimatedCard } from "@/components/animations/AnimatedCard"
-
 
 export default function HomePage() {
   // ✏️ 会社情報を変更する場合は /data/company.json を編集してください

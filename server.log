@@ -95475,3 +95475,342 @@ Import trace for requested module:
 ./components/ui/select.tsx
 ./app/contact/page.tsx
  ⨯ Module not found: Error: Can't resolve 'next-flight-client-entry-loader' in '/home/hyuga/claude-max-run/v0-msgcorp-jp-issues'
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:40:1]
+ [2m37[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m38[0m | 
+ [2m39[0m |   return (
+ [2m40[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m41[0m |       {/* Hero Section */}
+ [2m42[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m43[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:40:1]
+ [2m37[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m38[0m | 
+ [2m39[0m |   return (
+ [2m40[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m41[0m |       {/* Hero Section */}
+ [2m42[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m43[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:40:1]
+ [2m37[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m38[0m | 
+ [2m39[0m |   return (
+ [2m40[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m41[0m |       {/* Hero Section */}
+ [2m42[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m43[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:40:1]
+ [2m37[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m38[0m | 
+ [2m39[0m |   return (
+ [2m40[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m41[0m |       {/* Hero Section */}
+ [2m42[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m43[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:39:1]
+ [2m36[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m37[0m | 
+ [2m38[0m |   return (
+ [2m39[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m40[0m |       {/* Hero Section */}
+ [2m41[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m42[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:39:1]
+ [2m36[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m37[0m | 
+ [2m38[0m |   return (
+ [2m39[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m40[0m |       {/* Hero Section */}
+ [2m41[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m42[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ✓ Compiled in 768ms (820 modules)
+ ✓ Compiled in 174ms (820 modules)
+ ✓ Compiled in 157ms (820 modules)
+ ✓ Compiled in 153ms (820 modules)
+ ✓ Compiled in 203ms (820 modules)
+ ✓ Compiled in 154ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 152ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 149ms (820 modules)
+ ✓ Compiled in 166ms (820 modules)
+ ✓ Compiled in 167ms (820 modules)
+ ✓ Compiled in 221ms (820 modules)
+ ✓ Compiled in 154ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 152ms (820 modules)
+ ✓ Compiled in 150ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 224ms (820 modules)
+ ✓ Compiled in 152ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 155ms (820 modules)
+ ✓ Compiled in 151ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 147ms (820 modules)
+ ✓ Compiled in 208ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 68ms (806 modules)
+ ✓ Compiled in 64ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 57ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 61ms (806 modules)
+ ✓ Compiled in 58ms (806 modules)
+ ✓ Compiled in 61ms (806 modules)
+ ✓ Compiled in 64ms (806 modules)
+ ✓ Compiled in 120ms (806 modules)
+ ✓ Compiled in 66ms (806 modules)
+ ✓ Compiled in 69ms (806 modules)
+ ✓ Compiled in 66ms (806 modules)
+ ✓ Compiled in 68ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 225ms (820 modules)
+ ✓ Compiled in 152ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 151ms (820 modules)
+ ✓ Compiled in 173ms (820 modules)
+ ✓ Compiled in 155ms (820 modules)
+ ✓ Compiled in 232ms (820 modules)
+ ✓ Compiled in 149ms (820 modules)
+ ✓ Compiled in 150ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 147ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 204ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 134ms (820 modules)
+ ✓ Compiled in 148ms (820 modules)
+ ✓ Compiled in 191ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 136ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 129ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 148ms (820 modules)
+ ✓ Compiled in 198ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 136ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 202ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-select/dist/index.mjs
+./components/ui/select.tsx
+./app/contact/page.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-select/dist/index.mjs
+./components/ui/select.tsx
+./app/contact/page.tsx
+ ⨯ ./node_modules/aria-hidden/dist/es2015/index.js
+Error: ENOENT: no such file or directory, open '/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/node_modules/aria-hidden/dist/es2015/index.js'
+
+Import trace for requested module:
+./node_modules/aria-hidden/dist/es2015/index.js
+./node_modules/@radix-ui/react-select/dist/index.mjs
+./components/ui/select.tsx
+./app/contact/page.tsx
+ ⨯ Module not found: Error: Can't resolve 'next-flight-client-entry-loader' in '/home/hyuga/claude-max-run/v0-msgcorp-jp-issues'
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4m/home/hyuga/claude-max-run/v0-msgcorp-jp-issues/app/page.tsx[0m:39:1]
+ [2m36[0m |   const latestNews = newsData.news.slice(0, 3)
+ [2m37[0m | 
+ [2m38[0m |   return (
+ [2m39[0m |     <div className="bg-white font-sans">
+    : [35;1m     ^^^[0m
+ [2m40[0m |       {/* Hero Section */}
+ [2m41[0m |       <section className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+ [2m42[0m |         <div className="absolute inset-0 opacity-5">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 196ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 136ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 202ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 135ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 196ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 136ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in -1248ms (820 modules)
+ ✓ Compiled in 63ms (806 modules)
+ ✓ Compiled in 60ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 63ms (806 modules)
+ ✓ Compiled in 64ms (806 modules)
+ ✓ Compiled in 62ms (806 modules)
+ ✓ Compiled in 64ms (806 modules)
+ ✓ Compiled in 60ms (806 modules)
+ ✓ Compiled in 61ms (806 modules)
+ ✓ Compiled in 101ms (806 modules)
+ ✓ Compiled in 81ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 61ms (806 modules)
+ ✓ Compiled in 60ms (806 modules)
+ ✓ Compiled in 59ms (806 modules)
+ ✓ Compiled in 61ms (806 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 148ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 149ms (820 modules)
+ ✓ Compiled in 219ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 145ms (820 modules)
+ ✓ Compiled in 143ms (820 modules)
+ ✓ Compiled in 148ms (820 modules)
+ ✓ Compiled in 141ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 137ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 203ms (820 modules)
+ ✓ Compiled in 144ms (820 modules)
+ ✓ Compiled in 146ms (820 modules)
+ ✓ Compiled in 140ms (820 modules)
+ ✓ Compiled in 133ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 139ms (820 modules)
+ ✓ Compiled in 142ms (820 modules)
+ ✓ Compiled in 138ms (820 modules)
+ ✓ Compiled in 204ms (820 modules)
