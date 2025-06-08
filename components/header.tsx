@@ -25,24 +25,33 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              About
+            <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+              ホーム
+            </Link>
+            <Link href="/#vision" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+              VISION
             </Link>
             <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              サービス
+              SERVICE
             </Link>
             <Link href="/media" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              メディア
+              MEDIA
             </Link>
             <Link href="/news" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              ニュース
+              NEWS
+            </Link>
+            <Link href="/partnership" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+              PARTNERSHIP
             </Link>
             <Link href="/company" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              会社概要
+              COMPANY
+            </Link>
+            <Link href="/careers" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+              CAREERS
             </Link>
             <Link href="/contact">
-              <Button variant="outline" size="sm">
-                お問い合わせ
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                CONTACT
               </Button>
             </Link>
           </nav>
@@ -61,46 +70,67 @@ export function Header() {
           <div className="lg:hidden border-t bg-white py-4">
             <nav className="flex flex-col space-y-4">
               <Link
-                href="/about"
+                href="/"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                ホーム
+              </Link>
+              <Link
+                href="/#vision"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                VISION
               </Link>
               <Link
                 href="/services"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                サービス
+                SERVICE
               </Link>
               <Link
                 href="/media"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                メディア
+                MEDIA
               </Link>
               <Link
                 href="/news"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                ニュース
+                NEWS
+              </Link>
+              <Link
+                href="/partnership"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                PARTNERSHIP
               </Link>
               <Link
                 href="/company"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                会社概要
+                COMPANY
+              </Link>
+              <Link
+                href="/careers"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                CAREERS
               </Link>
               <Link
                 href="/contact"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                お問い合わせ
+                CONTACT
               </Link>
             </nav>
           </div>

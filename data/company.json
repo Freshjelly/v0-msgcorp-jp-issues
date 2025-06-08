@@ -44,7 +44,19 @@
       "titleEn": "Core Values",
       "content": "医学・薬学・科学による、効果的・効率的なヘルスケアの提供",
       "description": "人に寄り添うテクノロジーと、伝統に根ざす知恵の融合",
-      "formula": "未来型ヘルスケア = Eastern Wisdom + Western Science + Digital Intelligence"
+      "formula": "未来型ヘルスケア = Eastern Wisdom × Western Science × Digital Intelligence"
+    },
+    "businessPolicy": {
+      "title": "経営方針",
+      "titleEn": "Business Policy",
+      "content": "すべての社員が挑戦的で実行力があり、誇りを持って働ける環境をつくります。",
+      "policies": [
+        "お客さま一人ひとりの健康のために、質の高いサービスを提供します。",
+        "お客さまにより良いサービスを提供するため、常に「学び」「研究」「実践」などあらゆる努力をいたします。",
+        "社員一人ひとりが健康で幸せを感じ、成長と活躍ができる環境をつくります。",
+        "コーポレート・ガバナンスの確立による健全な経営を行います。",
+        "常に新しい価値の創造により、継続的な成長を生み出します。"
+      ]
     }
   },
   "partners": [

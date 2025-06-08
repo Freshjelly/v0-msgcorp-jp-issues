@@ -48,21 +48,21 @@ export default function HomePage() {
               <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50">
                 {company.tagline}
               </Badge>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 健康はすべての人の
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
                   幸せのためにある
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                MSGは、<span className="font-semibold text-blue-600">西洋医学と東洋の叡智とAIテクノロジー</span>
+                MSGは、<span className="font-semibold text-blue-600">西洋医学 × 東洋の叡智 × AIテクノロジー</span>
                 で、あなたの体と心に寄り添い、
                 <br className="hidden sm:block" />
-                100年時代を健やかに生きるすべての人へ、真のウェルビーイングを届けます。
+                "100年時代"を健やかに生きるすべての人へ、真のウェルビーイングを届けます。
               </p>
             </div>
 
-            <div className="text-lg text-gray-700 mb-8">人生100年時代、あなたは幸福・健康を実感できていますか？</div>
+            <div className="text-lg text-gray-700 mb-8">人生100年時代、あなたは"幸福・健康"を実感できていますか？</div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/#vision">
@@ -106,7 +106,7 @@ export default function HomePage() {
       <section id="vision" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">VISION | 私たちのビジョン</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ VISION｜私たちのビジョン</h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               <span className="font-semibold">Personal Health, Shared Future.</span>
               <br />
@@ -217,6 +217,63 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
+
+          {/* Business Policy Section */}
+          <div className="mt-16">
+            <Card className="border-0 shadow-lg bg-white">
+              <CardHeader className="pb-4">
+                <div className="flex items-center space-x-3 mb-4">
+                  <Building className="h-8 w-8 text-indigo-500" />
+                  <div>
+                    <CardTitle className="text-xl">{philosophy.businessPolicy.title} | Business Policy</CardTitle>
+                    <CardDescription className="text-sm text-gray-500">
+                      Creating an environment where all employees can work with challenge, execution, and pride.
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <span className="font-semibold text-gray-900">
+                    {philosophy.businessPolicy.content}
+                  </span>
+                </p>
+                <ul className="space-y-2">
+                  {philosophy.businessPolicy.policies.map((policy, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
+                      <span className="text-gray-700">{policy}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* MESSAGE Section */}
+          <div className="mt-16">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-blue-50 to-green-50">
+              <CardContent className="p-8 lg:p-12">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">MESSAGE</h3>
+                <div className="prose prose-lg max-w-none text-gray-700">
+                  <p className="leading-relaxed">
+                    健康は、紀元前から人々が追い求めてきたテーマです。しかし、どれほど医学が進歩しても、私たちはまだ「真の健康」の定義すら明確にできていません。
+                  </p>
+                  <p className="leading-relaxed mt-4">
+                    MSGは、東洋の叡智と西洋科学、そして最新のデジタルテクノロジーを融合させることで、新しい健康の在り方を提案します。私たちが目指すのは、単に病気を治すことではなく、一人ひとりが自分らしく、豊かに生きるための「ウェルビーイング」の実現です。
+                  </p>
+                  <p className="leading-relaxed mt-4">
+                    100年時代を生きる私たちにとって、健康とは何か。幸福とは何か。その答えを、共に見つけていきましょう。
+                  </p>
+                  <div className="mt-6 text-center">
+                    <p className="text-xl font-semibold text-blue-600">
+                      未来型ヘルスケア = Eastern Wisdom × Western Science × Digital Intelligence
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -224,7 +281,7 @@ export default function HomePage() {
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">SERVICE | サービス紹介</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ SERVICE｜サービス紹介</h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
               Healthcare that evolves with you.
               <br />
@@ -261,6 +318,32 @@ export default function HomePage() {
                           {service.description}
                         </p>
                       )}
+                      {service.consumerService && (
+                        <div className="bg-white rounded-lg p-6 shadow-md">
+                          <h4 className="text-xl font-bold text-gray-900 mb-4">{service.consumerService.name}</h4>
+                          <ul className="space-y-2 mb-4">
+                            {service.consumerService.benefits.map((benefit, idx) => (
+                              <li key={idx} className="flex items-center space-x-2">
+                                <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                                <span className="text-gray-700">{benefit}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="bg-green-50 rounded-lg p-4">
+                            <div className="text-center">
+                              <p className="text-3xl font-bold text-green-600 mb-1">
+                                {service.consumerService.pricing.trial.duration}
+                                <span className="text-2xl ml-2">{service.consumerService.pricing.trial.price}から始められて</span>
+                              </p>
+                              <p className="text-lg font-semibold text-green-700">{service.consumerService.pricing.trial.highlight}</p>
+                              <p className="text-base text-gray-600 mt-2">
+                                {service.consumerService.pricing.regular.note} {service.consumerService.pricing.regular.duration} 
+                                <span className="font-semibold text-gray-900 ml-1">{service.consumerService.pricing.regular.price}</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      )}
                       <Button className={`bg-${service.color}-600 hover:bg-${service.color}-700`}>
                         詳細を見る
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -285,7 +368,7 @@ export default function HomePage() {
       <section id="media" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">MEDIA | メディア展開</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ MEDIA｜メディア展開</h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
               A new health habit starts with one article.
               <br />
@@ -293,7 +376,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-3 mb-4">
@@ -308,15 +391,15 @@ export default function HomePage() {
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                    <span>不調に対する医師・薬剤師の明快アドバイス</span>
+                    <span>専門家が具体的に解決策を提示</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                    <span>共感性の高い体験談で「気づき」から「行動」へ</span>
+                    <span>共感性の高い体験談</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                    <span>記事から直接専門家に相談できる高い実用性</span>
+                    <span>相談窓口に直結する高い実用性</span>
                   </li>
                 </ul>
               </CardContent>
@@ -339,6 +422,24 @@ export default function HomePage() {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <Zap className="h-8 w-8 text-purple-600" />
+                  <CardTitle className="text-2xl">Kampo Contents Service</CardTitle>
+                </div>
+                <CardDescription className="text-lg">
+                  漢方・東洋医学に特化したコンテンツ配信サービス
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  メディアや企業向けに、漢方・東洋医学の専門知識をベースにした質の高いコンテンツを提供。
+                  記事執筆、監修、教育コンテンツの開発まで、幅広いニーズに対応します。
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -347,7 +448,7 @@ export default function HomePage() {
       <section id="news" className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">NEWS | ニュース</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ NEWS｜ニュース</h2>
             <p className="text-xl lg:text-2xl text-gray-600">
               Where Progress Speaks.
               <br />
@@ -383,11 +484,79 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Partnership Section */}
+      <section id="partnership" className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ PARTNERSHIP｜投資家・企業パートナー</h2>
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
+              Health Revolution, Co-Created.
+              <br />
+              共創が拓く、新しい健康の常識。
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <Building className="h-8 w-8 text-blue-600" />
+                  <CardTitle className="text-xl">官民連携プロジェクト</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  政府機関・自治体との連携により、地域医療の発展と健康格差の解消に取り組んでいます。
+                  予防医療の普及と健康寿命の延伸を目指した実証実験を展開中。
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <Brain className="h-8 w-8 text-green-600" />
+                  <CardTitle className="text-xl">学術連携・研究機関</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  国内外の大学・研究機関と共同研究を実施。東西医療の融合と科学的エビデンスの蓄積により、
+                  新しい医療の形を創造します。
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <Users className="h-8 w-8 text-purple-600" />
+                  <CardTitle className="text-xl">事業参画・OEM開発</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  ヘルスケア事業への参入をお考えの企業様へ、商品開発から販売戦略まで一貫してサポート。
+                  貴社のビジョンを形にします。
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
+              パートナーシップについて詳しく見る
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Company Section */}
       <section id="company" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">COMPANY | 会社概要</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">■ COMPANY PROFILE｜会社概要</h2>
             <p className="text-xl lg:text-2xl text-gray-600">
               We Design the Future of Health.
               <br />

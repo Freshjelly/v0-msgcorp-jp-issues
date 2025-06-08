@@ -42,6 +42,26 @@
           "description": "正しい漢方実践のための仕組みづくり"
         }
       ],
+      "consumerService": {
+        "name": "あんしん漢方 for Consumer",
+        "benefits": [
+          "待ち時間や通院負担なし",
+          "全国・海外から相談可能",
+          "メール相談可能"
+        ],
+        "pricing": {
+          "trial": {
+            "price": "2,980円",
+            "duration": "14日分",
+            "highlight": "コスパ抜群！"
+          },
+          "regular": {
+            "price": "6,980円",
+            "duration": "30日分",
+            "note": "継続の場合"
+          }
+        }
+      },
       "color": "green"
     },
     {

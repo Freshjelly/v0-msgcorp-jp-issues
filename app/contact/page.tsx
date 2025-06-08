@@ -1,9 +1,6 @@
 "use client"
 
 import type React from "react"
-
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -37,8 +34,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      <Header />
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,11 +41,8 @@ export default function ContactPage() {
             <Badge variant="outline" className="text-blue-600 border-blue-200 bg-blue-50">
               Partner with Us.
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900">
-              CONTACT
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
-                お問い合わせ
-              </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+              ■ CONTACT｜お問い合わせ
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               共に未来を築こう
@@ -227,8 +219,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
