@@ -9,6 +9,7 @@ interface AnimatedButtonProps {
   onClick?: () => void
   whileHover?: object
   whileTap?: object
+  transition?: object
 }
 
 export const AnimatedButton = ({
@@ -20,6 +21,7 @@ export const AnimatedButton = ({
     boxShadow: "0 10px 25px rgba(0, 0, 0, 0.15)",
   },
   whileTap = { scale: 0.95 },
+  transition,
 }: AnimatedButtonProps) => {
   return (
     <motion.button
@@ -27,7 +29,7 @@ export const AnimatedButton = ({
       onClick={onClick}
       whileHover={whileHover}
       whileTap={whileTap}
-      transition={{
+      transition={transition || {
         type: "spring",
         stiffness: 300,
         damping: 20,

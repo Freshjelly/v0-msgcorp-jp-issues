@@ -70,19 +70,36 @@ export default function HomePage() {
             <FadeInWhenVisible delay={0.6}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/#vision">
-                  <AnimatedButton className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
-                    View Our Vision | ビジョン
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <AnimatedButton 
+                    className="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border-2 border-green-600 px-8 py-4 text-lg font-bold text-green-600 transition-all duration-300 hover:bg-green-600 hover:text-white hover:shadow-lg"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <span>Our Vision</span>
+                    <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </AnimatedButton>
                 </Link>
                 <Link href="/services">
-                  <AnimatedButton className="border border-gray-300 hover:border-blue-500 px-8 py-4 text-lg">
-                    Explore Services | サービス
+                  <AnimatedButton 
+                    className="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <span>Explore Services</span>
+                    <ArrowRight className="h-5 w-5 opacity-0 -ml-3 transition-all duration-300 group-hover:opacity-100 group-hover:ml-0" />
                   </AnimatedButton>
                 </Link>
                 <Link href="/news">
-                  <AnimatedButton className="border border-gray-300 hover:border-blue-500 px-8 py-4 text-lg">
-                    Read the Latest | ニュース
+                  <AnimatedButton 
+                    className="group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border-2 border-gray-300 px-8 py-4 text-lg font-semibold text-gray-700 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600"
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <span>Latest News</span>
+                    <ArrowRight className="h-5 w-5 opacity-0 -ml-3 transition-all duration-300 group-hover:opacity-100 group-hover:ml-0" />
                   </AnimatedButton>
                 </Link>
               </div>

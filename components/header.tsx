@@ -6,6 +6,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedButton } from "@/components/animations/AnimatedButton"
+import { StaggerContainer, StaggerItem } from "@/components/animations/StaggerContainer"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -26,36 +27,56 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              ホーム
-            </Link>
-            <Link href="/#vision" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              VISION
-            </Link>
-            <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              SERVICE
-            </Link>
-            <Link href="/media" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              MEDIA
-            </Link>
-            <Link href="/news" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              NEWS
-            </Link>
-            <Link href="/partnership" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              PARTNERSHIP
-            </Link>
-            <Link href="/company" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              COMPANY
-            </Link>
-            <Link href="/careers" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-              CAREERS
-            </Link>
-            <Link href="/contact">
-              <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg">
-                お問い合わせ
-              </AnimatedButton>
-            </Link>
+          <nav className="hidden lg:flex items-center">
+            <StaggerContainer className="flex items-center space-x-8">
+              <StaggerItem>
+                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  ホーム
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/#vision" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  VISION
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/services" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  SERVICE
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/media" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  MEDIA
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/news" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  NEWS
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/partnership" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  PARTNERSHIP
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/company" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  COMPANY
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/careers" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                  CAREERS
+                </Link>
+              </StaggerItem>
+              <StaggerItem>
+                <Link href="/contact">
+                  <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg">
+                    お問い合わせ
+                  </AnimatedButton>
+                </Link>
+              </StaggerItem>
+            </StaggerContainer>
           </nav>
 
           {/* Mobile menu button */}
