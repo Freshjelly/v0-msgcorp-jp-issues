@@ -14,6 +14,48 @@ import { AnimatedCard } from "@/components/animations/AnimatedCard"
 export default function ServicesPage() {
   const services = servicesData.services
 
+  // Helper function to get service-specific classes
+  const getServiceStyles = (serviceId: string) => {
+    switch (serviceId) {
+      case 'kampoai':
+        return {
+          cardBg: 'bg-gradient-to-br from-blue-50 to-indigo-100',
+          textColor: 'text-blue-600',
+          buttonBg: 'bg-blue-600 hover:bg-blue-700',
+          dotColor: 'bg-blue-600',
+          phaseBg: 'text-blue-600',
+          iconBg: 'bg-gradient-to-br from-blue-200 to-indigo-300'
+        }
+      case 'royal-kampo':
+        return {
+          cardBg: 'bg-gradient-to-br from-green-50 to-emerald-100',
+          textColor: 'text-green-600',
+          buttonBg: 'bg-green-600 hover:bg-green-700',
+          dotColor: 'bg-green-600',
+          phaseBg: 'text-green-600',
+          iconBg: 'bg-gradient-to-br from-green-200 to-emerald-300'
+        }
+      case 'smart-foods':
+        return {
+          cardBg: 'bg-gradient-to-br from-purple-50 to-pink-100',
+          textColor: 'text-purple-600',
+          buttonBg: 'bg-purple-600 hover:bg-purple-700',
+          dotColor: 'bg-purple-600',
+          phaseBg: 'text-purple-600',
+          iconBg: 'bg-gradient-to-br from-purple-200 to-pink-300'
+        }
+      default:
+        return {
+          cardBg: 'bg-gradient-to-br from-gray-50 to-gray-100',
+          textColor: 'text-gray-600',
+          buttonBg: 'bg-gray-600 hover:bg-gray-700',
+          dotColor: 'bg-gray-600',
+          phaseBg: 'text-gray-600',
+          iconBg: 'bg-gradient-to-br from-gray-200 to-gray-300'
+        }
+    }
+  }
+
   return (
     <div className="bg-white font-sans">
       {/* Hero Section */}
@@ -44,15 +86,17 @@ export default function ServicesPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <StaggerContainer className="space-y-16 md:space-y-20">
-            {services.map((service, index) => (
+            {services.map((service, index) => {
+              const styles = getServiceStyles(service.id)
+              return (
               <StaggerItem key={service.id}>
-                <AnimatedCard className={`border-0 shadow-xl bg-gradient-to-br from-${service.color}-50 to-${service.color === 'blue' ? 'indigo' : service.color === 'green' ? 'emerald' : 'pink'}-100 overflow-hidden`}>
+                <AnimatedCard className={`border-0 shadow-xl ${styles.cardBg} overflow-hidden`}>
                   <CardContent className="p-8 lg:p-12">
                     <div className="grid lg:grid-cols-2 gap-8 items-center">
                       <div className={`space-y-6 ${index % 2 === 1 ? 'order-2' : ''}`}>
                         <div className="space-y-2">
                           <h3 className="text-3xl md:text-4xl font-bold text-gray-900">{service.name}</h3>
-                          <p className={`text-lg md:text-xl text-${service.color}-600 font-medium`}>
+                          <p className={`text-lg md:text-xl ${styles.textColor} font-medium`}>
                             {service.tagline}
                             <br />
                             {service.taglineJa}
@@ -65,7 +109,7 @@ export default function ServicesPage() {
                             <ul className="space-y-3 text-gray-700">
                               {service.features.map((feature, featureIndex) => (
                                 <li key={featureIndex} className="flex items-start space-x-3">
-                                  <div className={`w-2 h-2 bg-${service.color}-600 rounded-full mt-2 flex-shrink-0`}></div>
+                                  <div className={`w-2 h-2 ${styles.dotColor} rounded-full mt-2 flex-shrink-0`}></div>
                                   <div>
                                     <span className="font-medium">{feature.title}</span>
                                     {feature.description && (
@@ -85,7 +129,7 @@ export default function ServicesPage() {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                               {service.phases.map((phase, phaseIndex) => (
                                 <div key={phaseIndex} className="bg-white rounded-lg p-4 shadow-sm">
-                                  <div className={`text-sm font-semibold text-${service.color}-600 mb-1`}>
+                                  <div className={`text-sm font-semibold ${styles.phaseBg} mb-1`}>
                                     Phase {phase.phase}
                                   </div>
                                   <div className="font-medium text-gray-900">{phase.title}</div>
@@ -124,24 +168,25 @@ export default function ServicesPage() {
                           </div>
                         )}
                         
-                        <AnimatedButton className={`bg-${service.color}-600 hover:bg-${service.color}-700 text-white px-8 py-3 rounded-lg font-semibold`}>
+                        <AnimatedButton className={`${styles.buttonBg} text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-all duration-200 hover:shadow-xl transform hover:scale-105`}>
                           詳細を見る
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </AnimatedButton>
                       </div>
                       
                       <div className={`relative ${index % 2 === 1 ? 'order-1' : ''}`}>
-                        <div className={`w-full h-64 md:h-80 bg-gradient-to-br from-${service.color}-200 to-${service.color === 'blue' ? 'indigo' : service.color === 'green' ? 'emerald' : 'pink'}-300 rounded-lg flex items-center justify-center`}>
-                          {service.id === 'kampoai' && <Brain className="h-20 md:h-24 w-20 md:w-24 text-blue-600" />}
-                          {service.id === 'royal-kampo' && <Leaf className="h-20 md:h-24 w-20 md:w-24 text-green-600" />}
-                          {service.id === 'smart-foods' && <Stethoscope className="h-20 md:h-24 w-20 md:w-24 text-purple-600" />}
+                        <div className={`w-full h-64 md:h-80 ${styles.iconBg} rounded-lg flex items-center justify-center shadow-lg`}>
+                          {service.id === 'kampoai' && <Brain className="h-20 md:h-24 w-20 md:w-24 text-blue-600 drop-shadow-lg" />}
+                          {service.id === 'royal-kampo' && <Leaf className="h-20 md:h-24 w-20 md:w-24 text-green-600 drop-shadow-lg" />}
+                          {service.id === 'smart-foods' && <Stethoscope className="h-20 md:h-24 w-20 md:w-24 text-purple-600 drop-shadow-lg" />}
                         </div>
                       </div>
                     </div>
                   </CardContent>
                 </AnimatedCard>
               </StaggerItem>
-            ))}
+              )
+            })}
           </StaggerContainer>
         </div>
       </section>
@@ -159,13 +204,13 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg">
+                  <AnimatedButton className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
                     お問い合わせ
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </AnimatedButton>
                 </Link>
                 <Link href="/partnership">
-                  <AnimatedButton className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-lg">
+                  <AnimatedButton className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:border-blue-700">
                     パートナーシップについて
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </AnimatedButton>
